@@ -1,0 +1,58 @@
+.footer {
+    margin-top: 16px;
+    border-top: 1px solid #3c444b;
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px 0;
+    }
+
+    .img-logo {
+        width: 100%;
+        max-width: 250px;
+        @media only screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+
+    h4 {
+        color: var(--text-fancy);
+        font-weight: 700;
+        display: inline-block;
+        border-bottom: 1px solid var(--text-fancy);
+        font-size: 22px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer-link a {
+        color: var(--text-body);
+    }
+
+    .game--therapy {
+        img {
+            margin-right: 5px;
+            height: 50px;
+        }
+    }
+
+    .footer-social {
+        img {
+            margin-right: 10px;
+            height: 30px;
+        }
+    }
+
+    .copyright {
+        color: var(--text-body);
+    }
+}

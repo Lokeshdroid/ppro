@@ -1,0 +1,319 @@
+@import "./iconVariables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?61una2');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?61una2#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?61una2') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?61una2') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?61una2##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gm--cricket-spade {
+  &:before {
+    content: $gm--cricket-spade; 
+  }
+}
+.gm--tv {
+  &:before {
+    content: $gm--tv; 
+  }
+}
+.gm--football {
+  &:before {
+    content: $gm--football; 
+  }
+}
+.gm--tennis {
+  &:before {
+    content: $gm--tennis; 
+  }
+}
+.gm--boxing {
+  &:before {
+    content: $gm--boxing; 
+  }
+}
+.gm--cricket {
+  &:before {
+    content: $gm--cricket; 
+  }
+}
+.gm--golf {
+  &:before {
+    content: $gm--golf; 
+  }
+}
+.gm--volleyball-net {
+  &:before {
+    content: $gm--volleyball-net; 
+  }
+}
+.gm--table-tennis {
+  &:before {
+    content: $gm--table-tennis; 
+  }
+}
+.gm--football-feild {
+  &:before {
+    content: $gm--football-feild; 
+  }
+}
+.gm--horse-racing {
+  &:before {
+    content: $gm--horse-racing; 
+  }
+}
+.gm--console {
+  &:before {
+    content: $gm--console; 
+  }
+}
+.gm--hound {
+  &:before {
+    content: $gm--hound; 
+  }
+}
+.gm--horse {
+  &:before {
+    content: $gm--horse; 
+  }
+}
+.gm--motorcycle {
+  &:before {
+    content: $gm--motorcycle; 
+  }
+}
+.gm--basketball {
+  &:before {
+    content: $gm--basketball; 
+  }
+}
+.gm--chess {
+  &:before {
+    content: $gm--chess; 
+  }
+}
+.gm--volleyball {
+  &:before {
+    content: $gm--volleyball; 
+  }
+}
+.gm--ice-hockey {
+  &:before {
+    content: $gm--ice-hockey; 
+  }
+}
+.gm--horse-riding {
+  &:before {
+    content: $gm--horse-riding; 
+  }
+}
+.gm--rugby {
+  &:before {
+    content: $gm--rugby; 
+  }
+}
+.gm--shuttle {
+  &:before {
+    content: $gm--shuttle; 
+  }
+}
+.gm--f1-car {
+  &:before {
+    content: $gm--f1-car; 
+  }
+}
+.gm--podium {
+  &:before {
+    content: $gm--podium; 
+  }
+}
+.gm--hockey {
+  &:before {
+    content: $gm--hockey; 
+  }
+}
+.gm--sport-car {
+  &:before {
+    content: $gm--sport-car; 
+  }
+}
+.gm--basketball-hoop {
+  &:before {
+    content: $gm--basketball-hoop; 
+  }
+}
+.gm--surfboard {
+  &:before {
+    content: $gm--surfboard; 
+  }
+}
+.gm--bicycle {
+  &:before {
+    content: $gm--bicycle; 
+  }
+}
+.gm--clover {
+  &:before {
+    content: $gm--clover; 
+  }
+}
+.gm--rifle {
+  &:before {
+    content: $gm--rifle; 
+  }
+}
+.gm--running {
+  &:before {
+    content: $gm--running; 
+  }
+}
+.gm--badminton {
+  &:before {
+    content: $gm--badminton; 
+  }
+}
+.gm--uniE925 {
+  &:before {
+    content: $gm--uniE925; 
+  }
+}
+.gm--sumo {
+  &:before {
+    content: $gm--sumo; 
+  }
+}
+.gm--pc {
+  &:before {
+    content: $gm--pc; 
+  }
+}
+.gm--beach-volleyball {
+  &:before {
+    content: $gm--beach-volleyball; 
+  }
+}
+.gm--desk-speaker {
+  &:before {
+    content: $gm--desk-speaker; 
+  }
+}
+.gm--partial-rain {
+  &:before {
+    content: $gm--partial-rain; 
+  }
+}
+.gm--monitor {
+  &:before {
+    content: $gm--monitor; 
+  }
+}
+.gm--lucky-draw {
+  &:before {
+    content: $gm--lucky-draw; 
+  }
+}
+.gm--uniE92D {
+  &:before {
+    content: $gm--uniE92D; 
+  }
+}
+.gm--ball1 {
+  &:before {
+    content: $gm--ball1; 
+  }
+}
+.gm--skis {
+  &:before {
+    content: $gm--skis; 
+  }
+}
+.gm--yacht {
+  &:before {
+    content: $gm--yacht; 
+  }
+}
+.gm--hockey-set {
+  &:before {
+    content: $gm--hockey-set; 
+  }
+}
+.gm--sking {
+  &:before {
+    content: $gm--sking; 
+  }
+}
+.gm--hockey-stick {
+  &:before {
+    content: $gm--hockey-stick; 
+  }
+}
+.gm--baseball {
+  &:before {
+    content: $gm--baseball; 
+  }
+}
+.gm--rugby-ball {
+  &:before {
+    content: $gm--rugby-ball; 
+  }
+}
+.gm--iron {
+  &:before {
+    content: $gm--iron; 
+  }
+}
+.gm--dart-board {
+  &:before {
+    content: $gm--dart-board; 
+  }
+}
+.gm--rugby-helmet {
+  &:before {
+    content: $gm--rugby-helmet; 
+  }
+}
+.gm--billiard-ball {
+  &:before {
+    content: $gm--billiard-ball; 
+  }
+}
+.gm--ticket {
+  &:before {
+    content: $gm--ticket; 
+  }
+}
+.gm--star {
+  &:before {
+    content: $gm--star; 
+  }
+}
+.gm--console2 {
+  &:before {
+    content: $gm--console2; 
+  }
+}
+.gm--shdc {
+  &:before {
+    content: $gm--shdc; 
+  }
+}

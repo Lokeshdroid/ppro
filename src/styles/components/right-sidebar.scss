@@ -1,0 +1,28 @@
+.latest-launches-slider {
+    .latest-launch-card {
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        cursor: pointer;
+
+        .link-wrap {
+            display: block;
+            width: 100%;
+
+            .gamecard {
+                width: 100%;
+            }
+        }
+
+        .new-launch-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            img {
+                height: 60px;
+            }
+        }
+    }
+}

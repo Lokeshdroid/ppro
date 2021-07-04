@@ -1,0 +1,527 @@
+.card-body {
+    padding: 0;
+}
+.back-title {
+    background-color: var(--back-title);
+    color: #eee !important
+}
+
+.lay-title {
+    background-color: var(--lay-title);
+    color: #eee !important
+}
+.detail-page-container {
+    .market-1 {
+        min-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+
+        .bet-table-header {
+            span {
+                &:first-child {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .market-2 {
+        min-width: calc(33.33% - 6px);
+        max-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+        flex: 1;
+        width: 100%;
+
+        .max-bet {
+            width: 130px;
+        }
+
+        .nation-name {
+            >span {
+                &:first-child {
+                    max-width: calc(100% - 110px);
+                }
+            }
+
+            width: calc(100% - 148px);
+        }
+    }
+
+    .market-11 {
+        min-width: calc(50% - 6px);
+        max-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+        flex: 1;
+        width: 50%;
+
+        .max-bet {
+            width: 110px;
+        }
+
+        .nation-name {
+            >span {
+                &:first-child {
+                    max-width: calc(100% - 110px);
+                }
+            }
+
+            width: calc(100% - 148px);
+        }
+    }
+
+    .market-3 {
+        margin-left: 3px;
+        margin-right: 3px;
+        min-width: calc(50% - 6px);
+        flex: 1;
+
+        .bet-table-header {
+            justify-content: flex-start;
+
+            .nation-name {
+                width: calc(100% - 224px);
+            }
+        }
+
+        .nation-name {
+            width: calc(100% - 300px);
+        }
+    }
+
+    .market-4 {
+        margin-left: 3px;
+        margin-right: 3px;
+        min-width: calc(100% - 6px);
+        flex: 1;
+
+        .bet-table-header {
+            justify-content: flex-start;
+
+            .nation-name {
+                width: calc(100% - 300px);
+            }
+        }
+
+        .max-bet {
+            width: 110px;
+            width: 120px;
+        }
+
+        .nation-name {
+            >span {
+                &:first-child {
+                    max-width: calc(100% - 110px);
+                }
+            }
+        }
+    }
+
+    .market-4.width-75 {
+        margin-left: 3px;
+        margin-right: 3px;
+        min-width: calc(60% - 6px);
+        max-width: calc(100% - 6px);
+        flex: 1;
+    }
+
+    .market-2.width-25 {
+        margin-left: 3px;
+        margin-right: 3px;
+        min-width: calc(40% - 6px);
+        flex: 1;
+    }
+
+    .market-5 {
+        margin-left: 3px;
+        margin-right: 3px;
+        min-width: calc(100% - 6px);
+        flex: 1;
+
+        .bet-table-header {
+            justify-content: flex-start;
+
+            .nation-name {
+                width: calc(100% - 298px);
+            }
+        }
+
+        .max-bet {
+            width: 110px;
+        }
+
+        .nation-name {
+            >span {
+                &:first-child {
+                    max-width: calc(100% - 110px);
+                }
+            }
+
+            width: calc(100% - 300px);
+        }
+    }
+
+    .market-6 {
+        min-width: calc(50% - 6px);
+        max-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+        flex: 1;
+        width: 100%;
+
+        .bet-table-header {
+            justify-content: flex-start;
+
+            .nation-name {
+                width: calc(100% - 224px);
+            }
+        }
+
+        .fancy-tripple {
+            border-bottom: 1px solid #3c444b;
+
+            .bet-table-row {
+                border-bottom: 0;
+            }
+        }
+
+        .nation-name {
+            width: calc(100% - 224px);
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            p {
+                height: auto;
+                width: 100%;
+
+                &:last-child {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .market-9 {
+        min-width: calc(50% - 6px);
+        max-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+        flex: 1;
+
+        .max-bet {
+            width: 110px;
+        }
+
+        .nation-name {
+            >span {
+                &:first-child {
+                    max-width: calc(100% - 110px);
+                }
+            }
+
+            width: calc(100% - 72px);
+        }
+    }
+
+    .market-10 {
+        min-width: calc(50% - 6px);
+        max-width: calc(100% - 6px);
+        margin-left: 3px;
+        margin-right: 3px;
+        flex: 1;
+
+        .bet-table-header {
+            justify-content: flex-start;
+        }
+
+        .nation-name {
+            width: calc(100% - 148px);
+            cursor: pointer;
+        }
+
+        .bet-table-row {
+            border-bottom: 1px solid #3c444b;
+        }
+    }
+
+    .bet-table-header {
+        height: 40px;
+        padding: 5px 8px;
+        border-radius: 8px 8px 0 0;
+        background-color: var(--bg-table-header);
+        color: var(--text-table-header);
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    .bet-table-header.collapsed {
+        img {
+            transform: rotate(0);
+        }
+    }
+
+    .bet-table {
+        margin-top: 6px;
+    }
+
+    .bet-table-row {
+        padding: 2px 8px;
+    }
+
+    .max-bet {
+        font-size: var(--font-small);
+        float: right;
+        width: 80px;
+        text-align: right;
+    }
+
+    .nation-name {
+        width: calc(100% - 452px);
+        padding-right: 5px;
+
+        >span {
+            &:first-child {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: calc(100% - 80px);
+                display: inline-block;
+                text-transform: capitalize;
+                vertical-align: middle;
+            }
+        }
+
+        p {
+            height: 19px;
+            color: var(--text-table);
+            margin-bottom: 6px;
+            margin-bottom: 0;
+            line-height: 20px;
+
+            span {
+                &:first-child {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: calc(100% - 68px);
+                    display: inline-block;
+                }
+
+                &:last-child {
+                    font-size: var(--font-small);
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .bl-title {
+        height: 30px;
+        border-radius: 4px;
+        width: 72px;
+        text-align: center;
+        line-height: 30px;
+        color: var(--text-black);
+        font-weight: var(--font-medium);
+        margin-right: 4px;
+        cursor: default;
+        font-size: var(--font-caption);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .bl-box {
+        width: 72px;
+        height: 38px;
+        padding: 3px 0;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+            height: 14px;
+            line-height: 14px;
+        }
+
+        .odds {
+            height: 16px;
+            line-height: 16px;
+            margin-bottom: 1px;
+        }
+    }
+
+    .bl-box.no-val {
+        line-height: 38px;
+        padding: 0;
+        border: 0;
+
+        .odds {
+            color: var(--text-table);
+        }
+    }
+
+    .market10 {
+        .nation-name {
+            p {
+                span {
+                    &:last-child {
+                        font-size: var(--font-body);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detail-page-container.cricket-detail {
+    .market-6 {
+        min-width: calc(100% - 6px);
+
+        .fancy-tripple {
+            height: 100%;
+        }
+
+        .col-md-6 {
+            &:nth-last-child(1) {
+                .fancy-tripple {
+                    border-bottom: 0;
+                }
+            }
+
+            &:nth-last-child(2) {
+                .fancy-tripple {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .market-10 {
+        min-width: calc(100% - 6px);
+    }
+}
+
+.bet-table-body {
+    .bet-table-row {
+        &:first-child {
+            padding: 2px 8px;
+        }
+    }
+}
+
+.fancy-min-max {
+    font-size: var(--font-small);
+    text-align: right;
+    width: 72px;
+    line-height: 16px;
+}
+
+.market-1 .suspendedfull:after {
+    width: 100%;
+    right: 0
+}
+
+.market-1 .suspendedtext:after {
+    right: 0;
+    width: 100%;
+    height: calc(100% - 2px)
+}
+
+.market-1 .suspended:after {
+    background-color: #131313c2;
+    color: var(--text-red)
+}
+
+.market-11 .suspendedtext:after,
+.market-11 .suspendedtext:before,
+.market-2 .suspendedtext:after,
+.market-2 .suspendedtext:before {
+    width: 148px;
+    height: 38px
+}
+
+.market-11 .suspendedfull:after,
+.market-2 .suspendedfull:after {
+    width: 148px;
+    height: calc(100% - 4px)
+}
+
+.market-3 .suspendedtext:after {
+    width: 300px;
+    height: 38px
+}
+
+.market-3 .suspendedfull:after {
+    width: 300px;
+    height: calc(100% - 4px)
+}
+
+.market-4 .suspendedtext:after {
+    width: 452px;
+    height: 38px
+}
+
+.market-4 .suspendedfull:after {
+    width: 452px;
+    height: calc(100% - 4px)
+}
+
+.market-5 .suspendedtext:after {
+    right: 160px;
+    width: 148px;
+    height: 38px
+}
+
+.market-5 .suspendedfull:after {
+    right: 160px;
+    width: 148px;
+    height: calc(100% - 4px)
+}
+
+.market-6 .suspendedtext:after {
+    width: 148px;
+    right: 84px;
+    height: calc(100% - 4px)
+}
+
+.market-6 .suspendedfull:after {
+    width: 148px;
+    right: 84px;
+    height: calc(100% - 4px)
+}
+
+.market-9 .suspendedtext:after {
+    width: 72px;
+    right: 8px;
+    height: calc(100% - 4px)
+}
+
+.market-10 .suspendedtext:after {
+    width: 72px;
+    right: 84px;
+    height: calc(100% - 4px)
+}
+
+.market-message {
+    padding: 0 5px;
+    font-size: var(--font-small);
+    line-height: 16px;
+    color: var(--text-table)
+}

@@ -1,0 +1,139 @@
+.casino-video-title {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px;
+    z-index: 10;
+    text-align: center;
+    min-width: 220px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .casino-name {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #fdcf13;
+    }
+    .casino-video-rid {
+        font-weight: 700;
+        color: #ddd;
+    }
+}
+.casino-video-right-icons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    display: -webkit-flex;
+}
+.casino-video-home-icon, .casino-video-lr-icon, .casino-video-rules-icon {
+    font-size: 24px;
+    background-color: rgba(0,0,0,.5);
+    border: 1px solid #999;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.casino-video-home-icon svg, .casino-video-lr-icon svg, .casino-video-rules-icon svg {
+    font-size: 24;
+    color: white;
+    cursor: pointer;
+}
+.casino-timer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    display: -webkit-flex;
+}
+.base-timer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 50%;
+}
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(
+90deg
+);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+.base-timer__label {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--text-fancy);
+    font-family: timer;
+}
+.base-timer__label.green, .base-timer__path-remaining.green {
+    color: #41b883;
+}
+.base-timer__label>span {
+    min-width: 20px;
+    text-align: center;
+    line-height: 1;
+}
+.video-box {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.center-main-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding-top: 6px;
+    margin-top: 60px;
+}
+.casino-center {
+    width: calc(100% - 476px);
+    margin-right: 6px;
+    margin-left: 6px;
+    position: relative;
+}
+.casino-container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+.casino-table {
+    background-color: var(--bg-table);
+    border-radius: 8px;
+    padding-bottom: 0;
+    color: var(--text-table);
+    position: relative;
+    transform: translateZ(0);
+}

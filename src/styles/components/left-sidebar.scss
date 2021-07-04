@@ -1,0 +1,931 @@
+.left-sidebar {
+    background-color: #16191c;
+    min-height: 100vh;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    height: 100vh;
+    transition: .4s;
+    width: 302px;
+
+    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
+        width: 270px;
+    }
+
+    @media only screen and (max-width: 1279px) {
+        top: 0;
+        z-index: 1051;
+        width: 80%;
+        transform: translate3d(-100vw, 0, 0);
+        
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .search-box {
+        padding: 0 24px 0 16px;
+        
+        display: flex;
+        align-items: flex-start;
+        
+        @media only screen and (max-width: 1279px) {
+            margin-top: 62px;
+            padding: 0 16px;
+
+            .menu-button-mobile {
+                margin-left: 16px;
+            }
+        }
+
+        .form-group {
+            position: relative;
+            margin-right: 0;
+            margin-bottom: 16px;
+
+            .form-control {
+                height: 48px;
+                border-radius: 4px;
+                background-color: var(--bg-body) !important;
+                border-color: var(--bg-body) !important;
+                color: var(--text-body);
+
+                @media only screen and (max-width: 1279px) {
+                    height: 36px;
+                }
+            }
+
+            .search-icon {
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                color: #727C87;
+                transform: translateY(-50%);
+                font-size: 15px;
+            }
+        }
+    }
+
+    .menu-box {
+        margin-top: 0;
+        height: calc(100vh - 200px);
+        scrollbar-width: thin;
+        scrollbar-color: var(--bg-table) var(--bg-table-header);
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+        padding-bottom: 20px;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+
+            &-track {
+                background: #2e3439;
+            }
+
+            &-thumb {
+                background: #3c444b;
+            }
+        }
+
+        .accordion-root {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+
+            .accordion-root-header {
+                background-color: transparent;
+                padding: 0;
+                border-radius: 0;
+                border-bottom: none;
+
+                button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 10px 16px;
+                    border-radius: 0;
+                    border: 0;
+
+
+                    &.open {
+                        .gm {
+                            color: var(--text-white);
+                        }
+
+                        .sport-name {
+                            color: var(--text-white);
+                        }
+                    }
+                }
+
+                .gm {
+                    font-size: 18px;
+                    width: 30px;
+                    display: inline-block;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    color: var(--text-white);
+                    text-align: left;
+                    // margin-right: 10px;
+                }
+
+                .sport-name {
+                    width: calc(100% - 40px);
+                    font-size: 1rem;
+                    color: var(--text-sidebar);
+                    text-align: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &:hover {
+                    opacity: .9;
+                }
+
+            }
+
+            .accordion-root-body {
+                padding: 0;
+            }
+        }
+
+        .accordion-inside {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+
+            .accordion-inside-header {
+                border-radius: 0;
+                border-bottom: none;
+                padding: 0;
+                background-color: transparent;
+
+                &:hover {
+                    opacity: .85;
+                }
+
+                button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 10px 16px;
+                    border-radius: 0;
+                    border: 0;
+                    font-size: 1rem;
+                    background-color: var(--bg-table-header);
+                    color: var(--text-table-header);
+                    position: relative;
+
+                    .inside-header-name {
+                        width: 100%;
+                        max-width: 100%;
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding-right: 10px;
+                    }
+
+                    .dropdownButton {
+                        position: absolute;
+                        right: 8px;
+                        transition: .5s all ease-in-out;
+                    }
+
+                    &.open {
+                        .dropdownButton {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+            }
+
+            .accordion-inside-body {
+                padding: 0;
+
+                .accordionLink {
+                    display: block;
+                    width: 100%;
+                    padding: 8px 16px;
+                    background-color: var(--bg-table);
+                    color: var(--text-table) !important;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                    text-align: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    &:hover {
+                        opacity: .85;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.logo-box {
+    padding: 4px 0;
+    text-align: center;
+    height: auto;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    max-height: 105px;
+    max-width: 100%;
+}
+
+.left-sidebar .menu-box .accordion-root.sport {
+    &-1 {
+        .accordion-root-header {
+            .gm {
+                color: var(--cricket);
+            }
+
+            button.open {
+                background-color: var(--cricket);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--cricket);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-2 {
+        .accordion-root-header {
+            .gm {
+                color: var(--tennis);
+            }
+
+            button.open {
+                background-color: var(--tennis);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--tennis);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-3 {
+        .accordion-root-header {
+            .gm {
+                color: var(--football);
+            }
+
+            button.open {
+                background-color: var(--football);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--football);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-4 {
+        .accordion-root-header {
+            .gm {
+                color: var(--table-tennis);
+            }
+
+            button.open {
+                background-color: var(--table-tennis);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--table-tennis);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-5 {
+        .accordion-root-header {
+            .gm {
+                color: var(--basketball);
+            }
+
+            button.open {
+                background-color: var(--basketball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--basketball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-6 {
+        .accordion-root-header {
+            .gm {
+                color: var(--handball);
+            }
+
+            button.open {
+                background-color: var(--handball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--handball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-7 {
+        .accordion-root-header {
+            .gm {
+                color: var(--ice-hockey);
+            }
+
+            button.open {
+                background-color: var(--ice-hockey);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--ice-hockey);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-8 {
+        .accordion-root-header {
+            .gm {
+                color: var(--egames);
+            }
+
+            button.open {
+                background-color: var(--egames);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--egames);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-9 {
+        .accordion-root-header {
+            .gm {
+                color: var(--futsal);
+            }
+
+            button.open {
+                background-color: var(--futsal);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--futsal);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-10 {
+        .accordion-root-header {
+            .gm {
+                color: var(--rugby-league);
+            }
+
+            button.open {
+                background-color: var(--rugby-league);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--rugby-league);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-11 {
+        .accordion-root-header {
+            .gm {
+                color: var(--boxing);
+            }
+
+            button.open {
+                background-color: var(--boxing);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--boxing);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-12 {
+        .accordion-root-header {
+            .gm {
+                color: var(--beach-volleyball);
+            }
+
+            button.open {
+                background-color: var(--beach-volleyball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--beach-volleyball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-13 {
+        .accordion-root-header {
+            .gm {
+                color: var(--boxing);
+            }
+
+            button.open {
+                background-color: var(--boxing);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--boxing);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-14 {
+        .accordion-root-header {
+            .gm {
+                color: var(--beach-volleyball);
+            }
+
+            button.open {
+                background-color: var(--beach-volleyball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--beach-volleyball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-15 {
+        .accordion-root-header {
+            .gm {
+                color: var(--horse-racing);
+            }
+
+            button.open {
+                background-color: var(--horse-racing);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--horse-racing);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-16 {
+        .accordion-root-header {
+            .gm {
+                color: var(--grey-hounds);
+            }
+
+            button.open {
+                background-color: var(--grey-hounds);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--grey-hounds);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-17 {
+        .accordion-root-header {
+            .gm {
+                color: var(--moto-gp);
+            }
+
+            button.open {
+                background-color: var(--moto-gp);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--moto-gp);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-18 {
+        .accordion-root-header {
+            .gm {
+                color: var(--chess);
+            }
+
+            button.open {
+                background-color: var(--chess);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--chess);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-19 {
+        .accordion-root-header {
+            .gm {
+                color: var(--vollyball);
+            }
+
+            button.open {
+                background-color: var(--vollyball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--vollyball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-20 {
+        .accordion-root-header {
+            .gm {
+                color: var(--rugby-league);
+            }
+
+            button.open {
+                background-color: var(--rugby-league);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--rugby-league);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-21 {
+        .accordion-root-header {
+            .gm {
+                color: var(--motorbikes);
+            }
+
+            button.open {
+                background-color: var(--motorbikes);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--motorbikes);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-22 {
+        .accordion-root-header {
+            .gm {
+                color: var(--athletics);
+            }
+
+            button.open {
+                background-color: var(--athletics);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--athletics);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-23 {
+        .accordion-root-header {
+            .gm {
+                color: var(--basketball-3-3);
+            }
+
+            button.open {
+                background-color: var(--basketball-3-3);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--basketball-3-3);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-24 {
+        .accordion-root-header {
+            .gm {
+                color: var(--sumo);
+            }
+
+            button.open {
+                background-color: var(--sumo);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--sumo);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-25 {
+        .accordion-root-header {
+            .gm {
+                color: var(--tv-games);
+            }
+
+            button.open {
+                background-color: var(--tv-games);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--tv-games);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-26 {
+        .accordion-root-header {
+            .gm {
+                color: var(--motorbikes);
+            }
+
+            button.open {
+                background-color: var(--motorbikes);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--motorbikes);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-27 {
+        .accordion-root-header {
+            .gm {
+                color: var(--baseball);
+            }
+
+            button.open {
+                background-color: var(--baseball);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--baseball);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-28 {
+        .accordion-root-header {
+            .gm {
+                color: var(--rugby-league);
+            }
+
+            button.open {
+                background-color: var(--rugby-league);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--rugby-league);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-29 {
+        .accordion-root-header {
+            .gm {
+                color: var(--darts);
+            }
+
+            button.open {
+                background-color: var(--darts);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--darts);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-30 {
+        .accordion-root-header {
+            .gm {
+                color: var(--americal-footbal);
+            }
+
+            button.open {
+                background-color: var(--americal-footbal);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--americal-footbal);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-31 {
+        .accordion-root-header {
+            .gm {
+                color: var(--snooker);
+            }
+
+            button.open {
+                background-color: var(--snooker);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--snooker);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-32 {
+        .accordion-root-header {
+            .gm {
+                color: var(--football);
+            }
+
+            button.open {
+                background-color: var(--football);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--football);
+                opacity: .85;
+            }
+        }
+    }
+
+    &-33 {
+        .accordion-root-header {
+            .gm {
+                color: var(--egames);
+            }
+
+            button.open {
+                background-color: var(--egames);
+            }
+        }
+
+        .accordion-inside-header {
+            button.open {
+                color: var(--text-white);
+                background-color: var(--egames);
+                opacity: .85;
+            }
+        }
+    }
+}
+
+.b-sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 1050;
+
+    &.show {
+        pointer-events: all;
+        opacity: 0.6;
+    }
+}
